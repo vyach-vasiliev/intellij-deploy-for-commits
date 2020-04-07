@@ -2,7 +2,7 @@
     <id>com.vargant.dfc</id>
     <name>Deploy for commits</name>
     <version>1.1</version>
-    <vendor email="contact.vyacheslav@gmail.com" url="#">Vyacheslav Vasilev</vendor>
+    <vendor email="contact.vyacheslav@gmail.com" url="https://github.com/vyach-vasiliev/">Vyacheslav Vasilev</vendor>
 
     <!-- since 2018.2 -->
     <idea-version since-build="182"/>
