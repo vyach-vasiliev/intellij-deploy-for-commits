@@ -1,0 +1,5 @@
+.idea
+/test_project
+build
+.gradle
+gradle

@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>com.vargant.dfc</id>
+    <name>Deploy for commits</name>
+    <version>1.1</version>
+    <vendor email="contact.vyacheslav@gmail.com" url="#">Vyacheslav Vasilev</vendor>
+
+    <!-- since 2018.2 -->
+    <idea-version since-build="182"/>
+
+    <description><![CDATA[
+    Added VCS menu items for deploying files of selected commits.
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products -->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.vcs</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="PublishGroup.UploadTo" text="Upload to"  class="NullClass">
+            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="last"/>
+        </action>
+
+
+        <action id="PublishGroup.SyncLocalVsRemoteWith" class="NullClass" text="Sync with Deployed to">
+            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="after" relative-to-action="PublishGroup.UploadTo"/>
+        </action>
+
+    </actions>
+</idea-plugin>
