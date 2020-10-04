@@ -1,8 +1,8 @@
 <idea-plugin>
     <id>com.vargant.dfc</id>
-    <name>Deploy for commits</name>
-    <version>1.1</version>
-    <vendor email="contact.vyacheslav@gmail.com" url="https://github.com/vyach-vasiliev/">Vyacheslav Vasilev</vendor>
+    <name>Deploy for Commits</name>
+    <version>1.3</version>
+    <vendor email="contact.vyacheslav@gmail.com" url="https://github.com/vyach-vasiliev/">Vyacheslav Vasiliev</vendor>
 
     <!-- since 2018.2 -->
     <idea-version since-build="182"/>
@@ -18,19 +18,17 @@
     <depends>com.intellij.modules.vcs</depends>
 
 
-    <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-    </extensions>
-
     <actions>
         <!-- Add your actions here -->
-        <action id="PublishGroup.UploadTo" text="Upload to"  class="NullClass">
-            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="last"/>
+        <action id="VcsRepositoryChangesBrowserMenuDeploy.SyncLocalVsRemoteWith" class="main.java.SyncLocalVsRemoteWith"
+                text="Upload to ...">
+            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="last" />
         </action>
 
-
-        <action id="PublishGroup.SyncLocalVsRemoteWith" class="NullClass" text="Sync with Deployed to">
-            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="after" relative-to-action="PublishGroup.UploadTo"/>
+        <action id="VcsRepositoryChangesBrowserMenu.SyncWithDeployTo" class="main.java.SyncWithDeployTo"
+                text="Sync with Deployed to ...">
+            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="after"
+                          relative-to-action="VcsRepositoryChangesBrowserMenuDeploy.SyncLocalVsRemoteWith"/>
         </action>
 
     </actions>
