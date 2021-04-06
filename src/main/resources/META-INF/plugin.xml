@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.vargant.dfc</id>
     <name>Deploy for Commits</name>
-    <version>1.3</version>
+    <version>1.4</version>
     <vendor email="contact.vyacheslav@gmail.com" url="https://github.com/vyach-vasiliev/">Vyacheslav Vasiliev</vendor>
 
     <!-- since 2018.2 -->
@@ -16,6 +16,8 @@
     <!-- uncomment to enable plugin in all products -->
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.vcs</depends>
+    <depends>com.intellij.modules.ssh</depends>
+    <depends>com.intellij.modules.ultimate</depends>
 
 
     <actions>

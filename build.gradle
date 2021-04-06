@@ -4,9 +4,9 @@ plugins {
 }
 
 group 'com.vargant'
-version '1.3-SNAPSHOT'
+version '1.4-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
@@ -18,9 +18,9 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2020.2'
-//    version '2019.2'
+    version '2020.3'
+    pluginName 'Deploy for commits'
 }
 patchPluginXml {
-    changeNotes """new version for >= 2020.2"""
+    changeNotes """new version for >= 2020.3"""
 }
