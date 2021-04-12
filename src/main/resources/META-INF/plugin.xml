@@ -1,11 +1,7 @@
 <idea-plugin>
     <id>com.vargant.dfc</id>
     <name>Deploy for Commits</name>
-    <version>1.4</version>
     <vendor email="contact.vyacheslav@gmail.com" url="https://github.com/vyach-vasiliev/">Vyacheslav Vasiliev</vendor>
-
-    <!-- since 2018.2 -->
-    <idea-version since-build="182"/>
 
     <description><![CDATA[
     Added VCS menu items for deploying files of selected commits.
@@ -32,6 +28,5 @@
             <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="after"
                           relative-to-action="VcsRepositoryChangesBrowserMenuDeploy.SyncLocalVsRemoteWith"/>
         </action>
-
     </actions>
 </idea-plugin>

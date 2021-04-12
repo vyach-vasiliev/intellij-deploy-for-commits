@@ -4,9 +4,9 @@ plugins {
 }
 
 group 'com.vargant'
-version '1.4-SNAPSHOT'
 
 sourceCompatibility = JavaVersion.VERSION_11
+
 
 repositories {
     mavenCentral()
@@ -16,11 +16,35 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
+String buildPluginVersion = '1.5'
+//String buildPluginVersion = project.getProperty("pluginVersion")  // ex. 1.5
+String buildIdeaVersion = project.getProperty("ideaVersion")        // ex. '2018.1'
+String sinceBuildApp = project.getProperty("sinceApp")              // ex. '181'
+String untilBuildApp = project.getProperty("untilApp")              // ex. 191.*
+
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2020.3'
+    version buildIdeaVersion
     pluginName 'Deploy for commits'
 }
+
+
 patchPluginXml {
-    changeNotes """new version for >= 2020.3"""
+    changeNotes """
+    <b>1.5-2020.1</b> - compatible build for 2021.1<br/>
+    
+    <b>1.5-2020.3</b> - compatible build for 2020.3<br/>
+    
+    <b>1.5-2019.3</b> - compatible build for 2019.3<br/>
+    <b>1.5-2019.2</b> - compatible build for 2019.2<br/>
+    <b>1.5-2019.1</b> - compatible build for 2019.1<br/>
+    
+    <b>1.5-2018.3</b> - compatible build for 2018.3<br/>
+    <b>1.5-2018.2</b> - compatible build for 2018.2<br/>
+    <b>1.5-2018.1</b> - compatible build for 2018.1<br/>
+                """
+    sinceBuild sinceBuildApp
+    untilBuild untilBuildApp
+    version "${buildPluginVersion}-${buildIdeaVersion}"
 }
+version patchPluginXml.getProperty('version')
