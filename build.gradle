@@ -16,35 +16,38 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-String buildPluginVersion = '1.5'
-//String buildPluginVersion = project.getProperty("pluginVersion")  // ex. 1.5
-String buildIdeaVersion = project.getProperty("ideaVersion")        // ex. '2018.1'
-String sinceBuildApp = project.getProperty("sinceApp")              // ex. '181'
-String untilBuildApp = project.getProperty("untilApp")              // ex. 191.*
+sourceSets {
+    main.java.srcDirs += 'src/main/java'
+    main.resources.srcDirs += 'src/main/resources'
+}
+
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version buildIdeaVersion
+    version 2020.3
     pluginName 'Deploy for commits'
 }
 
 
 patchPluginXml {
     changeNotes """
-    <b>1.5-2020.1</b> - compatible build for 2021.1<br/>
+    <b>1.6-2021</b> - compatible build for 2021.* <br/>
+                        * updated gradle up to 6.9 <br/>
     
-    <b>1.5-2020.3</b> - compatible build for 2020.3<br/>
+    <b>1.5-2021.1</b> - compatible build for 2021.1 <br/>
     
-    <b>1.5-2019.3</b> - compatible build for 2019.3<br/>
-    <b>1.5-2019.2</b> - compatible build for 2019.2<br/>
-    <b>1.5-2019.1</b> - compatible build for 2019.1<br/>
+    <b>1.5-2020.3</b> - compatible build for 2020.3 <br/>
     
-    <b>1.5-2018.3</b> - compatible build for 2018.3<br/>
-    <b>1.5-2018.2</b> - compatible build for 2018.2<br/>
-    <b>1.5-2018.1</b> - compatible build for 2018.1<br/>
+    <b>1.5-2019.3</b> - compatible build for 2019.3 <br/>
+    <b>1.5-2019.2</b> - compatible build for 2019.2 <br/>
+    <b>1.5-2019.1</b> - compatible build for 2019.1 <br/>
+    
+    <b>1.5-2018.3</b> - compatible build for 2018.3 <br/>
+    <b>1.5-2018.2</b> - compatible build for 2018.2 <br/>
+    <b>1.5-2018.1</b> - compatible build for 2018.1 <br/>
                 """
-    sinceBuild sinceBuildApp
-    untilBuild untilBuildApp
-    version "${buildPluginVersion}-${buildIdeaVersion}"
+    sinceBuild 193
+    untilBuild 212
+    version "1.6-2021"
 }
 version patchPluginXml.getProperty('version')

@@ -13,6 +13,9 @@ Added VCS menu items for deploying files of selected commits.
 gradle build --stacktrace -PideaVersion=2021.1 -PsinceApp=211 -PuntilApp=221.*
 ```
 
+And finally, if you want to remove of large files from the cache, then delete the folders along this path (for Windows)
+`%USERPROFILE%/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/`
+
 ## Resources
 - Official docs - https://plugins.jetbrains.com/docs/intellij/welcome.html
 - List of actions - https://github.com/lisiur/idea-actions
