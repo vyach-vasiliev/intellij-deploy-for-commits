@@ -1,9 +1,15 @@
 
+<p>
+<a href="https://plugins.jetbrains.com/plugin/14091/"><img src="https://img.shields.io/jetbrains/plugin/r/rating/14091"/></a>
+<a href="/LICENSE"><img src="https://img.shields.io/github/license/vyach-vasiliev/idea_deploy_for_commits"/></a>
+</p>
+
 
 # Plugin for JetBrains IDEs (IDEA, PyCharm, etc)
 Added VCS menu items for deploying files of selected commits.
 
-<img src="https://img.shields.io/jetbrains/plugin/r/rating/14091"/> [Official page](https://plugins.jetbrains.com/plugin/14091/) free plugin in JetBrains Marketplace
+[Official page](https://plugins.jetbrains.com/plugin/14091/) free plugin in JetBrains Marketplace
+
 
 ## How install
 - open `IDE settings -> plugins` and type "Deploy for Commits" for search
