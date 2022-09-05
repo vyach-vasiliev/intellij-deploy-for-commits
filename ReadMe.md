@@ -9,8 +9,9 @@ Added VCS menu items for deploying files of selected commits.
 ![alt text](images/example.png "Example")
 
 ## How build
-```
-gradle build --stacktrace -PideaVersion=2021.1 -PsinceApp=211 -PuntilApp=221.*
+Example build for 2022.* version
+```sh
+build -PideaVersion=2022.1 -PsinceApp=221 -PuntilApp=231.* --stacktrace
 ```
 
 And finally, if you want to remove of large files from the cache, then delete the folders along this path (for Windows)

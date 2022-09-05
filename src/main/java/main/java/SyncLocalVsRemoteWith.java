@@ -8,7 +8,10 @@ import org.jetbrains.annotations.NotNull;
 //import com.intellij.webcore.resourceRoots.actions.VcsActionGroupPublishGroup.UploadTo
 
 public class SyncLocalVsRemoteWith extends AnAction {
-
+    /**
+     * Register UploadTo action
+     * @param e Carries information on the invocation place
+     */
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
         AnAction action = ActionManager.getInstance().getAction("PublishGroup.UploadTo");

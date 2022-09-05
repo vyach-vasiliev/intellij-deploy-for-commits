@@ -12,8 +12,8 @@
     <!-- uncomment to enable plugin in all products -->
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.vcs</depends>
-    <depends>com.intellij.modules.ssh</depends>
-    <depends>com.intellij.modules.ultimate</depends>
+<!--    <depends>com.intellij.modules.ssh</depends>-->
+<!--    <depends>com.intellij.modules.ultimate</depends>-->
 
 
     <actions>
