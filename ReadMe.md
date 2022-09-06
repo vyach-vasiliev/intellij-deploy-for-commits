@@ -1,6 +1,7 @@
 
 <p>
 <a href="https://plugins.jetbrains.com/plugin/14091/"><img src="https://img.shields.io/jetbrains/plugin/r/rating/14091"/></a>
+<a href="https://plugins.jetbrains.com/plugin/14091/"><img src="https://img.shields.io/jetbrains/plugin/v/14091?label=version"/></a>
 <a href="/LICENSE"><img src="https://img.shields.io/github/license/vyach-vasiliev/idea_deploy_for_commits"/></a>
 </p>
 
