@@ -39,4 +39,4 @@ And finally, if you want to remove of large files from the cache, then delete th
 - Gradle build - https://github.com/JetBrains/gradle-intellij-plugin
 
 ## Contribution
-**Please let me know about any problems in [issues](issues). Cheers!**
+**Please let me know about any problems in [issues](/../../issues). Cheers!**
