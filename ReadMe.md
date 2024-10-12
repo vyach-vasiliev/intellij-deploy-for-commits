@@ -5,8 +5,9 @@
 <a href="/LICENSE"><img src="https://img.shields.io/github/license/vyach-vasiliev/intellij-deploy-for-commits"/></a>
 </p>
 
+<!-- Plugin description -->
 
-# Plugin for JetBrains IDEs (IDEA, PyCharm, etc)
+# Plugin for JetBrains IDEs (IDEA, PyCharm, etc.)
 Added VCS menu items for deploying files of selected commits.
 
 [Official page](https://plugins.jetbrains.com/plugin/14091/) free plugin in JetBrains Marketplace
@@ -21,15 +22,25 @@ Added VCS menu items for deploying files of selected commits.
 2. Open the right menu in the file panel on the right
 3. Choose action for deployment
 
-![alt text](images/example.png "Example")
+![alt text](https://raw.githubusercontent.com/vyach-vasiliev/intellij-deploy-for-commits/refs/heads/main/images/example-min.png "Example")
+
+<!-- Plugin description end -->
+
+## How install
+- open `IDE settings -> plugins` and type "Deploy for Commits" for search
+- or [download manually](https://plugins.jetbrains.com/plugin/14091/)
 
 ## How build
-Example build for 2022.* version
+```sh
+build --stacktrace
+```
+
+Example build for specific version (2022.* for example)
 ```sh
 build -PideaVersion=2022.1 -PsinceApp=221 -PuntilApp=231.* --stacktrace
 ```
 
-And finally, if you want to remove of large files from the cache, then delete the folders along this path (for Windows)
+And finally, if you want to remove of large files from the cache, then delete the folders along this path (for Windows OS)
 `%USERPROFILE%/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/`
 
 ## Resources
