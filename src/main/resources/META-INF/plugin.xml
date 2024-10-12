@@ -4,7 +4,9 @@
     <vendor email="contact.vyacheslav@gmail.com" url="https://github.com/vyach-vasiliev/">Vyacheslav Vasiliev</vendor>
 
     <description><![CDATA[
-    Added VCS menu items for deploying files of selected commits.
+    Deploy files directly from commits!
+    Added VCS menu items to deploy files from selected commits.
+    See the example in the screenshot.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

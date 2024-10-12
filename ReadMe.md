@@ -7,15 +7,17 @@
 
 <!-- Plugin description -->
 
-# Plugin for JetBrains IDEs (IDEA, PyCharm, etc.)
-Added VCS menu items for deploying files of selected commits.
+# Plugin for JetBrains IDEs (Intellij IDEA, PyCharm, PHPStorm etc.)
+**Deploy files directly from commits!**\
+Added VCS menu items to deploy files from selected commits.\
+See the example in the screenshot.
 
 [Official page](https://plugins.jetbrains.com/plugin/14091/) free plugin in JetBrains Marketplace
 
 
 ## How install
 - open `IDE settings -> plugins` and type "Deploy for Commits" for search
-- or [download manually](https://plugins.jetbrains.com/plugin/14091/)
+- or download manually [from official store](https://plugins.jetbrains.com/plugin/14091/)
 
 ## How use
 1. Select line/lines of commits
