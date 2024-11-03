@@ -26,6 +26,10 @@ See the example in the screenshot.
 
 ![alt text](https://raw.githubusercontent.com/vyach-vasiliev/intellij-deploy-for-commits/refs/heads/main/images/example-min.png "Example")
 
+## Got an issue?
+If the plugin crashes with a class loading error, make sure you have `boot Java runtime` of the IDE version `21` or higher installed ([see more](https://www.jetbrains.com/help/idea/switching-boot-jdk.html)).\
+And if installing a compatible `boot Java runtime` version doesn't help you, feel free to open an issue [here](/../../issues).
+
 <!-- Plugin description end -->
 
 ## How install
