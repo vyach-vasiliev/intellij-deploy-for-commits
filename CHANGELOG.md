@@ -5,6 +5,12 @@
 ## [Unreleased]
 Nothing new.
 
+## 3.0.1 - 2024-11-03
+
+### Changed
+- downgrade `jvmToolchain` from `18` to `17` for supporting older JetBrains Runtime Bundled v17
+- add plugin icons
+
 ## 3.0.0 - 2024-10-12
 
 ### Changed

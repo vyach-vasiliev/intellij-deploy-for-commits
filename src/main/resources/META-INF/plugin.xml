@@ -4,7 +4,7 @@
     <vendor email="contact.vyacheslav@gmail.com" url="https://github.com/vyach-vasiliev/">Vyacheslav Vasiliev</vendor>
 
     <description><![CDATA[
-    Deploy files directly from commits!
+    Deploy files directly from Commits of VCS!
     Added VCS menu items to deploy files from selected commits.
     See the example in the screenshot.
     ]]></description>

@@ -7,8 +7,8 @@
 
 <!-- Plugin description -->
 
-# Plugin for JetBrains IDEs (Intellij IDEA, PyCharm, PHPStorm etc.)
-**Deploy files directly from commits!**\
+# Deploy files directly from Commits of VCS!
+### Plugin for JetBrains IDEs (Intellij IDEA, PyCharm, PHPStorm etc.)
 Added VCS menu items to deploy files from selected commits.\
 See the example in the screenshot.
 
