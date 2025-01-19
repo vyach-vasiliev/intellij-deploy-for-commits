@@ -104,13 +104,6 @@ tasks {
     publishPlugin {
         dependsOn(patchChangelog)
     }
-
-    sourceSets {
-        main {
-            java.srcDirs("src/main/java")
-            resources.srcDirs("src/main/resources")
-        }
-    }
 }
 
 project.tasks.named("processResources", Copy::class.java) {

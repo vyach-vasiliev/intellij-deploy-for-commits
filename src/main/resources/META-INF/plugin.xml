@@ -11,24 +11,12 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products -->
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.vcs</depends>
-<!--    <depends>com.intellij.modules.ssh</depends>-->
-<!--    <depends>com.intellij.modules.ultimate</depends>-->
 
 
-    <actions>
-        <!-- Add your actions here -->
-        <action id="VcsRepositoryChangesBrowserMenuDeploy.SyncLocalVsRemoteWith" class="main.java.SyncLocalVsRemoteWith"
-                text="Upload to ...">
-            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="last" />
-        </action>
+    <applicationListeners>
+        <listener class="listeners.DFCAppActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
 
-        <action id="VcsRepositoryChangesBrowserMenu.SyncWithDeployTo" class="main.java.SyncWithDeployTo"
-                text="Sync with Deployed to ...">
-            <add-to-group group-id="Vcs.RepositoryChangesBrowserMenu" anchor="after"
-                          relative-to-action="VcsRepositoryChangesBrowserMenuDeploy.SyncLocalVsRemoteWith"/>
-        </action>
-    </actions>
 </idea-plugin>
