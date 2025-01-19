@@ -41,9 +41,9 @@ And if installing a compatible `boot Java runtime` version doesn't help you, fee
 build --stacktrace
 ```
 
-Example build for specific version (2022.* for example)
+Example build for specific version
 ```sh
-build -PideaVersion=2022.1 -PsinceApp=221 -PuntilApp=231.* --stacktrace
+build build -PsinceApp=211 --stacktrace --stacktrace
 ```
 
 And finally, if you want to remove of large files from the cache, then delete the folders along this path (for Windows OS)

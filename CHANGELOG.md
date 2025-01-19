@@ -5,6 +5,12 @@
 ## [Unreleased]
 Nothing new.
 
+## 3.1.0 - 2025-01-19
+
+### Changed
+- rewrite java code to kotlin
+- update `platformVersion` from `2.1.0` to `2.2.1` and `kotlin` from `1.9.25` to `2.1.0`
+
 ## 3.0.1 - 2024-11-03
 
 ### Changed
