@@ -36,6 +36,30 @@ And if installing a compatible `boot Java runtime` version doesn't help you, fee
 - open `IDE settings -> plugins` and type "Deploy for Commits" for search
 - or [download manually](https://plugins.jetbrains.com/plugin/14091/)
 
+<details>
+  <summary>Supported Products</summary>
+
+- Android Studio — Giraffe | 2022.3.1 Beta 1+
+- AppCode — 2022.3+
+- Aqua — 2024.1.1+
+- CLion — 2022.3+
+- DataGrip — 2022.3+
+- DataSpell — 2022.3+
+- GoLand — 2022.3+
+- IntelliJ IDEA Community — 2022.3+
+- IntelliJ IDEA Ultimate — 2022.3+
+- MPS — 2022.3+
+- PhpStorm — 2022.3+
+- PyCharm Community — 2022.3+
+- PyCharm Professional — 2022.3+
+- Rider — 2022.3+
+- RubyMine — 2022.3+
+- RustRover — 2024.1+
+- WebStorm — 2022.3+
+- Writerside — 2024.2+
+
+</details>
+
 ## How build
 ```sh
 build --stacktrace
