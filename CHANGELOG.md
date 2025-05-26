@@ -5,6 +5,12 @@
 ## [Unreleased]
 Nothing new.
 
+## 3.2.0 - 2025-06-26
+
+### Changed
+- fix display upload items with default server selected
+- update `platformVersion` from `2.2.1` to `2.6.0` and `kotlin` from `2.1.0` to `2.1.21`
+
 ## 3.1.0 - 2025-01-19
 
 ### Changed
