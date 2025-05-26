@@ -14,12 +14,24 @@ internal class DFCAppActivationListener : ApplicationActivationListener {
         val actionManager = ActionManager.getInstance()
 
         val groupIdRepositoryChangesBrowserMenu = "Vcs.RepositoryChangesBrowserMenu"
-        val groupRepositoryChangesBrowserMenu = actionManager.getAction(groupIdRepositoryChangesBrowserMenu) as DefaultActionGroup
+        val groupRepositoryChangesBrowserMenu =
+            actionManager.getAction(groupIdRepositoryChangesBrowserMenu) as DefaultActionGroup
+
+        val actionIdUpload = "PublishGroup.Upload"
+        val actionUpload = actionManager.getAction(actionIdUpload)
+        if (!groupRepositoryChangesBrowserMenu.containsAction(actionUpload))
+            groupRepositoryChangesBrowserMenu.add(actionUpload)
 
         val actionIdUploadTo = "PublishGroup.UploadTo"
         val actionUploadTo = actionManager.getAction(actionIdUploadTo)
         if (!groupRepositoryChangesBrowserMenu.containsAction(actionUploadTo))
             groupRepositoryChangesBrowserMenu.add(actionUploadTo)
+
+
+        val actionIdSync = "PublishGroup.SyncLocalVsRemote"
+        val actionSync = actionManager.getAction(actionIdSync)
+        if (!groupRepositoryChangesBrowserMenu.containsAction(actionSync))
+            groupRepositoryChangesBrowserMenu.add(actionSync, Constraints(Anchor.AFTER, actionIdUploadTo))
 
 
         val actionIdSyncWithDeployTo = "PublishGroup.SyncLocalVsRemoteWith"
